@@ -91,28 +91,28 @@ if authentication_status:
     dft_CO = pd.read_excel('Transaction_CO.xlsx', header=1)
     dft_CO['Site'] = 'Connection One'
 
-    dft_GBB_CM18 = pd.read_excel('Transaction_CM18.xlsx')
+    dft_GBB_CM18 = pd.read_excel('Transaction_CM18.xlsx', header=1)
     dft_GBB_CM18['Site'] = 'GBB-CM18 (Inventory)'
 
-    dft_GBB_EC11 = pd.read_excel('Transaction_EC11.xlsx')
+    dft_GBB_EC11 = pd.read_excel('Transaction_EC11.xlsx', header=1)
     dft_GBB_EC11['Site'] = 'GBB-EC11 (Inventory)'
 
-    dft_SIA_ALH = pd.read_excel('Transaction_ALH.xlsx')
+    dft_SIA_ALH = pd.read_excel('Transaction_ALH.xlsx', header=1)
     dft_SIA_ALH['Site'] = 'SIA-ALH (Inventory)'
 
-    dft_SIA_PTB = pd.read_excel('Transaction_PTB.xlsx')
+    dft_SIA_PTB = pd.read_excel('Transaction_PTB.xlsx', header=1)
     dft_SIA_PTB['Site'] = 'SIA-PTB (Inventory)'
 
-    dft_SIA_STC = pd.read_excel('Transaction_STC.xlsx')
+    dft_SIA_STC = pd.read_excel('Transaction_STC.xlsx', header=1)
     dft_SIA_STC['Site'] = 'SIA-STC (Inventory)'
 
-    dft_SIAEC_H4 = pd.read_excel('Transaction_H4.xlsx')
+    dft_SIAEC_H4 = pd.read_excel('Transaction_H4.xlsx', header=1)
     dft_SIAEC_H4['Site'] = 'SIAEC-H4 (Inventory)'
 
-    dft_SIAEC_H5 = pd.read_excel('Transaction_H5.xlsx')
+    dft_SIAEC_H5 = pd.read_excel('Transaction_H5.xlsx', header=1)
     dft_SIAEC_H5['Site'] = 'SIAEC-H5 (Inventory)'
 
-    dft_SIAEC_H6 = pd.read_excel('Transaction_H6.xlsx')
+    dft_SIAEC_H6 = pd.read_excel('Transaction_H6.xlsx', header=1)
     dft_SIAEC_H6['Site'] = 'SIAEC-H6 (Inventory)'
 
     dft = pd.concat([dft_CO, dft_GBB_CM18, dft_GBB_EC11, dft_SIA_ALH, dft_SIA_PTB, dft_SIA_STC, dft_SIAEC_H4, dft_SIAEC_H5, dft_SIAEC_H6])
